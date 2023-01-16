@@ -1,5 +1,5 @@
 {
-    "serverMaxRevisionCounter": 23,
+    "serverMaxRevisionCounter": 25,
     "sourceMembers": {
         "LightningComponentBundle__twiloHomePage": {
             "serverRevisionCounter": 1,
@@ -44,8 +44,8 @@
             "isNameObsolete": false
         },
         "Profile__Admin": {
-            "serverRevisionCounter": 21,
-            "lastRetrievedFromServer": 21,
+            "serverRevisionCounter": 24,
+            "lastRetrievedFromServer": 24,
             "memberType": "Profile",
             "isNameObsolete": false
         },
@@ -95,6 +95,12 @@
             "serverRevisionCounter": 23,
             "lastRetrievedFromServer": 23,
             "memberType": "ApexTrigger",
+            "isNameObsolete": false
+        },
+        "ApexClass__AccountHandler": {
+            "serverRevisionCounter": 25,
+            "lastRetrievedFromServer": 25,
+            "memberType": "ApexClass",
             "isNameObsolete": false
         }
     }
