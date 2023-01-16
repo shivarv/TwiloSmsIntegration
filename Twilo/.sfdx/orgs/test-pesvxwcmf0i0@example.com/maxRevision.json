@@ -1,5 +1,5 @@
 {
-    "serverMaxRevisionCounter": 9,
+    "serverMaxRevisionCounter": 23,
     "sourceMembers": {
         "LightningComponentBundle__twiloHomePage": {
             "serverRevisionCounter": 1,
@@ -44,8 +44,8 @@
             "isNameObsolete": false
         },
         "Profile__Admin": {
-            "serverRevisionCounter": 5,
-            "lastRetrievedFromServer": 5,
+            "serverRevisionCounter": 21,
+            "lastRetrievedFromServer": 21,
             "memberType": "Profile",
             "isNameObsolete": false
         },
@@ -53,6 +53,48 @@
             "serverRevisionCounter": 6,
             "lastRetrievedFromServer": 6,
             "memberType": "CustomObject",
+            "isNameObsolete": false
+        },
+        "CustomField__Account.customerSpendSummary__c": {
+            "serverRevisionCounter": 10,
+            "lastRetrievedFromServer": 10,
+            "memberType": "CustomField",
+            "isNameObsolete": false
+        },
+        "CustomField__Account.customer_Classification__c": {
+            "serverRevisionCounter": 16,
+            "lastRetrievedFromServer": 16,
+            "memberType": "CustomField",
+            "isNameObsolete": false
+        },
+        "Layout__Account-Account (Marketing) Layout": {
+            "serverRevisionCounter": 17,
+            "lastRetrievedFromServer": 17,
+            "memberType": "Layout",
+            "isNameObsolete": false
+        },
+        "Layout__Account-Account (Sales) Layout": {
+            "serverRevisionCounter": 18,
+            "lastRetrievedFromServer": 18,
+            "memberType": "Layout",
+            "isNameObsolete": false
+        },
+        "Layout__Account-Account (Support) Layout": {
+            "serverRevisionCounter": 19,
+            "lastRetrievedFromServer": 19,
+            "memberType": "Layout",
+            "isNameObsolete": false
+        },
+        "Layout__Account-Account Layout": {
+            "serverRevisionCounter": 20,
+            "lastRetrievedFromServer": 20,
+            "memberType": "Layout",
+            "isNameObsolete": false
+        },
+        "ApexTrigger__AccountTrigger": {
+            "serverRevisionCounter": 23,
+            "lastRetrievedFromServer": 23,
+            "memberType": "ApexTrigger",
             "isNameObsolete": false
         }
     }

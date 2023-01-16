@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>customer_Classification__c</fullName>
+    <description>customer classification formula field</description>
+    <externalId>false</externalId>
+    <formula>IF(customerSpendSummary__c &gt;=  $Setup.CustomClassification__c.goldCustomerValue__c , &apos;GOLD&apos;,
+ IF(customerSpendSummary__c &gt;=  $Setup.CustomClassification__c.silverCustomerValue__c , &apos;SILVER&apos;,
+IF(customerSpendSummary__c &gt;=  $Setup.CustomClassification__c.bronzeCustomerValue__c , &apos;BRONZE&apos;, &apos;&apos;)))</formula>
+    <label>Customer Classification</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
