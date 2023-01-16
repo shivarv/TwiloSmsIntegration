@@ -1,0 +1,7 @@
+
+
+//test-pesvxwcmf0i0@example.com scratch org name
+// shivarvtask@gmail.com - real org name
+
+//sfdx force:source:deploy -w 10 -p force-app -u "test-ao4atmzxhvkt@example.com" -> command to deploy to source org
+// sfdx force:source:push -u test-pesvxwcmf0i0@example.com - deploy to scratch org
