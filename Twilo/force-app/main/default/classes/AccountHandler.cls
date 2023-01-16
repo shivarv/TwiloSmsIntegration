@@ -7,7 +7,7 @@
 **/
 public class AccountHandler {
 
-    private static CustomClassification__c customerclassification = CustomClassification__c.getOrgDefaults()
+    private static CustomClassification__c customerclassification = CustomClassification__c.getOrgDefaults();
 
 
 
@@ -31,9 +31,9 @@ public class AccountHandler {
     private static boolean isAccountSpendSummaryGotGold(Account oldAccount, Account newAccount) {
         if(oldAccount?.customerSpendSummary__c != newAccount?.customerSpendSummary__c
                  && newAccount?.customerSpendSummary__c >= customerclassification?.goldCustomerValue__c) {
-            return gold;
+            return true;
         }
-
+        return false;
     }
 
 }
