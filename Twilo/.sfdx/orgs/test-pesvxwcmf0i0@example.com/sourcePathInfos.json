@@ -29,7 +29,6 @@
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default": {
         "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default",
-        "deferContentHash": false,
         "isWorkspace": false,
         "isArtifactRoot": false,
         "state": "u",
@@ -37,9 +36,9 @@
         "isDirectory": true,
         "isMetadataFile": false,
         "size": 0,
-        "modifiedTime": 1673890712805,
-        "changeTime": 1673890712805,
-        "contentHash": "7334b1e8716ee057f8863fce77d3933d5bd9d984"
+        "modifiedTime": 1673902274660,
+        "changeTime": 1673902274660,
+        "contentHash": "28c0effce66915e9942954889778fa57b9f9f15d"
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\aura": {
         "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\aura",
@@ -154,5 +153,109 @@
         "modifiedTime": 1673892143761,
         "changeTime": 1673892143761,
         "contentHash": "446aafbf4a62397d32af0826f02f5508782fe7fe"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\CustomClassification__c": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\CustomClassification__c",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": true,
+        "isMetadataFile": false,
+        "size": 0,
+        "modifiedTime": 1673902274626,
+        "changeTime": 1673902274626,
+        "contentHash": "a6258c7e3ab9f9bc7b15968944bd8c977e81c3e8"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": true,
+        "isMetadataFile": false,
+        "size": 0,
+        "modifiedTime": 1673902274617,
+        "changeTime": 1673902274617,
+        "contentHash": "6046a6b8f6081e5b4da83d5aef11f6590604c066"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\CustomClassification__c\\fields": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\CustomClassification__c\\fields",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": true,
+        "isMetadataFile": false,
+        "size": 0,
+        "modifiedTime": 1673902274644,
+        "changeTime": 1673902274644,
+        "contentHash": "15408b5727ef6928ef26bced116223b938086dc0"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\profiles": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\profiles",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": true,
+        "isMetadataFile": false,
+        "size": 0,
+        "modifiedTime": 1673902274668,
+        "changeTime": 1673902274668,
+        "contentHash": "dd4bc5d00d5b87ac9dcfa94ec543d354d095c25c"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\CustomClassification__c\\fields\\goldCustomerValue__c.field-meta.xml": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\CustomClassification__c\\fields\\goldCustomerValue__c.field-meta.xml",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": false,
+        "isMetadataFile": true,
+        "metadataType": "CustomField",
+        "size": 408,
+        "modifiedTime": 1673902274636,
+        "changeTime": 1673902274636,
+        "contentHash": "92ac6b76e0c1303eab8c759cd2e75fb7c9ed17f8"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\CustomClassification__c\\CustomClassification__c.object-meta.xml": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\CustomClassification__c\\CustomClassification__c.object-meta.xml",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": false,
+        "isMetadataFile": true,
+        "metadataType": "CustomObject",
+        "size": 377,
+        "modifiedTime": 1673902274619,
+        "changeTime": 1673902274619,
+        "contentHash": "b2485a4f526b89c07b027c9eecc258dfedcd2c9b"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\CustomClassification__c\\fields\\bronzeCustomerValue__c.field-meta.xml": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\CustomClassification__c\\fields\\bronzeCustomerValue__c.field-meta.xml",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": false,
+        "isMetadataFile": true,
+        "metadataType": "CustomField",
+        "size": 412,
+        "modifiedTime": 1673902274627,
+        "changeTime": 1673902274627,
+        "contentHash": "80ea814c45f1681ccd33fd212557d6a8a4d0699a"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\CustomClassification__c\\fields\\silverCustomerValue__c.field-meta.xml": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\CustomClassification__c\\fields\\silverCustomerValue__c.field-meta.xml",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": false,
+        "isMetadataFile": true,
+        "metadataType": "CustomField",
+        "size": 412,
+        "modifiedTime": 1673902274644,
+        "changeTime": 1673902274644,
+        "contentHash": "a906f58f7f7e199c0c8e79ab63031592b1d636a1"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\profiles\\Admin.profile-meta.xml": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\profiles\\Admin.profile-meta.xml",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": false,
+        "isMetadataFile": true,
+        "metadataType": "Profile",
+        "size": 21428,
+        "modifiedTime": 1673902274668,
+        "changeTime": 1673902274668,
+        "contentHash": "45f3b04588392e0409f54a541cae27389c7ca28b"
     }
 }
