@@ -1,5 +1,5 @@
 {
-    "serverMaxRevisionCounter": 344,
+    "serverMaxRevisionCounter": 382,
     "sourceMembers": {
         "LightningComponentBundle__twiloHomePage": {
             "serverRevisionCounter": 31,
@@ -44,8 +44,8 @@
             "isNameObsolete": false
         },
         "Profile__Admin": {
-            "serverRevisionCounter": 45,
-            "lastRetrievedFromServer": 45,
+            "serverRevisionCounter": 359,
+            "lastRetrievedFromServer": 359,
             "memberType": "Profile",
             "isNameObsolete": false
         },
@@ -62,8 +62,8 @@
             "isNameObsolete": false
         },
         "CustomField__Account.customer_Classification__c": {
-            "serverRevisionCounter": 273,
-            "lastRetrievedFromServer": 273,
+            "serverRevisionCounter": 379,
+            "lastRetrievedFromServer": 379,
             "memberType": "CustomField",
             "isNameObsolete": false
         },
@@ -92,14 +92,14 @@
             "isNameObsolete": false
         },
         "ApexTrigger__AccountTrigger": {
-            "serverRevisionCounter": 30,
-            "lastRetrievedFromServer": 30,
+            "serverRevisionCounter": 358,
+            "lastRetrievedFromServer": 358,
             "memberType": "ApexTrigger",
             "isNameObsolete": false
         },
         "ApexClass__AccountHandler": {
-            "serverRevisionCounter": 46,
-            "lastRetrievedFromServer": 46,
+            "serverRevisionCounter": 357,
+            "lastRetrievedFromServer": 357,
             "memberType": "ApexClass",
             "isNameObsolete": false
         },
@@ -128,26 +128,26 @@
             "isNameObsolete": false
         },
         "LightningComponentBundle__sentSms": {
-            "serverRevisionCounter": 49,
-            "lastRetrievedFromServer": 49,
+            "serverRevisionCounter": 345,
+            "lastRetrievedFromServer": 345,
             "memberType": "LightningComponentBundle",
             "isNameObsolete": false
         },
         "LightningComponentResource__sentSms/sentSms.html": {
-            "serverRevisionCounter": 50,
-            "lastRetrievedFromServer": 50,
+            "serverRevisionCounter": 346,
+            "lastRetrievedFromServer": 346,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__sentSms/sentSms.js-meta.xml": {
-            "serverRevisionCounter": 51,
-            "lastRetrievedFromServer": 51,
+            "serverRevisionCounter": 347,
+            "lastRetrievedFromServer": 347,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__sentSms/sentSms.js": {
-            "serverRevisionCounter": 52,
-            "lastRetrievedFromServer": 52,
+            "serverRevisionCounter": 348,
+            "lastRetrievedFromServer": 348,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
@@ -190,6 +190,24 @@
         "CustomObject__Account": {
             "serverRevisionCounter": 123,
             "lastRetrievedFromServer": 123,
+            "memberType": "CustomObject",
+            "isNameObsolete": false
+        },
+        "ApexClass__AccountHandlerTest": {
+            "serverRevisionCounter": 382,
+            "lastRetrievedFromServer": 382,
+            "memberType": "ApexClass",
+            "isNameObsolete": false
+        },
+        "CustomField__TriggerConfig__c.isAccountTriggerEnabled__c": {
+            "serverRevisionCounter": 354,
+            "lastRetrievedFromServer": 354,
+            "memberType": "CustomField",
+            "isNameObsolete": false
+        },
+        "CustomObject__TriggerConfig__c": {
+            "serverRevisionCounter": 353,
+            "lastRetrievedFromServer": 353,
             "memberType": "CustomObject",
             "isNameObsolete": false
         }

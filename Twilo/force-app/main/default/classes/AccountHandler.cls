@@ -11,6 +11,9 @@ public class AccountHandler {
     private static String FROM_NUMBER_HARDCODE = '+17724480512';
     private static String TO_NUMBER_HARDCODE = '+447415423477';
 
+    public static boolean isTriggerEnabled() {
+        return TriggerConfig__c.getOrgDefaults().isAccountTriggerEnabled__c;
+    }
 
     public static void processAccountsUpdate(List<Account> accountsList, 
                                     Map<Id, Account> accountOldMap, Map<Id, Account> accountNewMap) 

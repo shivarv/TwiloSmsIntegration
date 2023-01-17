@@ -63,9 +63,9 @@
         "isDirectory": true,
         "isMetadataFile": false,
         "size": 0,
-        "modifiedTime": 1673989327705,
-        "changeTime": 1673989327705,
-        "contentHash": "4342fcfad783c73b15fb4660c08396c2615b110e"
+        "modifiedTime": 1673993943613,
+        "changeTime": 1673993943613,
+        "contentHash": "331fa9d49d329c49514e29fa5b66efb85888c836"
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\classes\\AccountHandler.cls": {
         "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\classes\\AccountHandler.cls",
@@ -76,10 +76,10 @@
         "state": "u",
         "isDirectory": false,
         "isMetadataFile": false,
-        "size": 1956,
-        "modifiedTime": 1673988895438,
-        "changeTime": 1673988895438,
-        "contentHash": "350ce23756b42e2daf9a4165bf07ffbd7e8f8060"
+        "size": 2089,
+        "modifiedTime": 1673995053616,
+        "changeTime": 1673995053616,
+        "contentHash": "95263f17abe4565b935b70d841edc2d7386373b5"
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\classes\\AccountHandler.cls-meta.xml": {
         "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\classes\\AccountHandler.cls-meta.xml",
@@ -198,7 +198,6 @@
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects": {
         "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects",
-        "deferContentHash": false,
         "isWorkspace": false,
         "isArtifactRoot": false,
         "state": "u",
@@ -206,9 +205,9 @@
         "isDirectory": true,
         "isMetadataFile": false,
         "size": 0,
-        "modifiedTime": 1673903634805,
-        "changeTime": 1673903634805,
-        "contentHash": "4c8f845ddaa8667f577ac29a7a22169d23107d90"
+        "modifiedTime": 1673994838479,
+        "changeTime": 1673994838479,
+        "contentHash": "4cd56daf6a6b6b2e28dda3bb2daf396b579fe5b4"
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\Account": {
         "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\Account",
@@ -260,8 +259,8 @@
         "isMetadataFile": true,
         "metadataType": "CustomField",
         "size": 790,
-        "modifiedTime": 1673990616368,
-        "changeTime": 1673990616368,
+        "modifiedTime": 1673998388901,
+        "changeTime": 1673998388901,
         "contentHash": "d4e24eb8ae228ca2a9dfc614092cd4adf9ddb831"
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\CustomClassification__c": {
@@ -367,18 +366,16 @@
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\profiles\\Admin.profile-meta.xml": {
         "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\profiles\\Admin.profile-meta.xml",
-        "deferContentHash": false,
         "isWorkspace": false,
-        "isArtifactRoot": false,
         "state": "u",
         "package": "force-app",
         "isDirectory": false,
         "isMetadataFile": true,
         "metadataType": "Profile",
-        "size": 21989,
-        "modifiedTime": 1673906526746,
-        "changeTime": 1673906526746,
-        "contentHash": "701f5c8de2b700b444234444a25296e6ddf4fd00"
+        "size": 27077,
+        "modifiedTime": 1673994838511,
+        "changeTime": 1673994838511,
+        "contentHash": "8587b6f33210282a67151c8a541b696f27c386e9"
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\triggers": {
         "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\triggers",
@@ -396,18 +393,17 @@
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\triggers\\AccountTrigger.trigger": {
         "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\triggers\\AccountTrigger.trigger",
-        "deferContentHash": false,
+        "metadataType": "ApexTrigger",
         "isWorkspace": false,
-        "isArtifactRoot": false,
-        "state": "u",
         "package": "force-app",
+        "deferContentHash": true,
+        "state": "u",
         "isDirectory": false,
         "isMetadataFile": false,
-        "metadataType": "ApexTrigger",
-        "size": 495,
-        "modifiedTime": 1673906059546,
-        "changeTime": 1673906059546,
-        "contentHash": "9cf5f277f076785442ad48d38fc4bf5f599e3c09"
+        "size": 563,
+        "modifiedTime": 1673995060177,
+        "changeTime": 1673995060177,
+        "contentHash": "98706fdc404c463ff0c002e016a92352e9a3d796"
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\triggers\\AccountTrigger.trigger-meta.xml": {
         "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\triggers\\AccountTrigger.trigger-meta.xml",
@@ -533,29 +529,29 @@
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\lwc\\sentSms\\sentSms.html": {
         "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\lwc\\sentSms\\sentSms.html",
-        "deferContentHash": false,
-        "state": "u",
+        "metadataType": "LightningComponentBundle",
         "package": "force-app",
+        "deferContentHash": true,
+        "state": "u",
         "isDirectory": false,
         "isMetadataFile": false,
-        "metadataType": "LightningComponentBundle",
-        "size": 245,
-        "modifiedTime": 1673989738353,
-        "changeTime": 1673989738353,
-        "contentHash": "ae4e8edda5463434e38fecdccda4fc7407e6bbf8"
+        "size": 444,
+        "modifiedTime": 1673993751651,
+        "changeTime": 1673993751651,
+        "contentHash": "015932f91151da8a7e6a19bc6e53f435251208b7"
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\lwc\\sentSms\\sentSms.js": {
         "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\lwc\\sentSms\\sentSms.js",
-        "deferContentHash": false,
-        "state": "u",
+        "metadataType": "LightningComponentBundle",
         "package": "force-app",
+        "deferContentHash": true,
+        "state": "u",
         "isDirectory": false,
         "isMetadataFile": false,
-        "metadataType": "LightningComponentBundle",
-        "size": 97,
-        "modifiedTime": 1673989593626,
-        "changeTime": 1673989593626,
-        "contentHash": "87306a08a080a3728a3841c57b4e32f9dc7994f0"
+        "size": 171,
+        "modifiedTime": 1673993637140,
+        "changeTime": 1673993637140,
+        "contentHash": "8d825907f395f62e7767afd8556f6c6b6c698418"
     },
     "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\lwc\\sentSms\\sentSms.js-meta.xml": {
         "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\lwc\\sentSms\\sentSms.js-meta.xml",
@@ -999,5 +995,75 @@
         "modifiedTime": 1673990616649,
         "changeTime": 1673990616649,
         "contentHash": "75dd6695bea42b102c440d970328a9c9c19f401a"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\classes\\AccountHandlerTest.cls": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\classes\\AccountHandlerTest.cls",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": false,
+        "isMetadataFile": false,
+        "metadataType": "ApexClass",
+        "size": 3864,
+        "modifiedTime": 1673998388920,
+        "changeTime": 1673998388920,
+        "contentHash": "521442ed2a95585df24f616aee7e8f5911cfc594"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\classes\\AccountHandlerTest.cls-meta.xml": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\classes\\AccountHandlerTest.cls-meta.xml",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": false,
+        "isMetadataFile": true,
+        "metadataType": "ApexClass",
+        "size": 174,
+        "modifiedTime": 1673998388913,
+        "changeTime": 1673998388913,
+        "contentHash": "a3a1a83f24dc75ab077df025f13c9e92c2e9a391"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\TriggerConfig__c": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\TriggerConfig__c",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": true,
+        "isMetadataFile": false,
+        "size": 0,
+        "modifiedTime": 1673994838486,
+        "changeTime": 1673994838486,
+        "contentHash": "bd835f2494192cc683f1451e59aa59db86f56ed5"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\TriggerConfig__c\\fields": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\TriggerConfig__c\\fields",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": true,
+        "isMetadataFile": false,
+        "size": 0,
+        "modifiedTime": 1673994838486,
+        "changeTime": 1673994838486,
+        "contentHash": "64eff7b0bffeef544c75e88db81ea32e69a6ba5d"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\TriggerConfig__c\\TriggerConfig__c.object-meta.xml": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\TriggerConfig__c\\TriggerConfig__c.object-meta.xml",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": false,
+        "isMetadataFile": true,
+        "metadataType": "CustomObject",
+        "size": 280,
+        "modifiedTime": 1673994838480,
+        "changeTime": 1673994838480,
+        "contentHash": "ec661e7b529ad7bf118ad0a8aa8fdad6ee6921fd"
+    },
+    "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\TriggerConfig__c\\fields\\isAccountTriggerEnabled__c.field-meta.xml": {
+        "sourcePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\objects\\TriggerConfig__c\\fields\\isAccountTriggerEnabled__c.field-meta.xml",
+        "state": "u",
+        "package": "force-app",
+        "isDirectory": false,
+        "isMetadataFile": true,
+        "metadataType": "CustomField",
+        "size": 351,
+        "modifiedTime": 1673994838486,
+        "changeTime": 1673994838486,
+        "contentHash": "78d66104d8a3351289dd8f4413de73d0daea44e0"
     }
 }
