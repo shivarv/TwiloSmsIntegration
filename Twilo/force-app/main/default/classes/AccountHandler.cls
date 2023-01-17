@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 01-16-2023
+ * @last modified on  : 01-17-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public class AccountHandler {
@@ -29,11 +29,19 @@ public class AccountHandler {
     }
 
     private static boolean isAccountSpendSummaryGotGold(Account oldAccount, Account newAccount) {
-        if(oldAccount?.customerSpendSummary__c != newAccount?.customerSpendSummary__c
+        /*
+        if(oldAccount.customer_Classification__c != 'Gold' && 
+                (oldAccount?.customerSpendSummary__c != newAccount?.customerSpendSummary__c)
                  && newAccount?.customerSpendSummary__c >= customerclassification?.goldCustomerValue__c) {
             return true;
         }
+        return false; */
+        if(oldAccount.customer_Classification__c != newAccount.customer_Classification__c && 
+        newAccount.customer_Classification__c == 'Gold') {
+            return true;
+        }
         return false;
+
     }
 
 }
