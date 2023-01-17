@@ -1,6 +1,21 @@
 {
+    "CustomLabels__bronzeCustomerLabel": {
+        "fullName": "bronzeCustomerLabel",
+        "type": "CustomLabels",
+        "metadataFilePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\labels\\CustomLabels.labels-meta.xml"
+    },
+    "CustomLabels__goldCustomerLabel": {
+        "fullName": "goldCustomerLabel",
+        "type": "CustomLabels",
+        "metadataFilePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\labels\\CustomLabels.labels-meta.xml"
+    },
     "CustomLabels__goldCustomerNotification": {
         "fullName": "goldCustomerNotification",
+        "type": "CustomLabels",
+        "metadataFilePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\labels\\CustomLabels.labels-meta.xml"
+    },
+    "CustomLabels__silverCustomerLabel": {
+        "fullName": "silverCustomerLabel",
         "type": "CustomLabels",
         "metadataFilePath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Git Projects\\Twilo\\TwiloSmsIntegration\\Twilo\\force-app\\main\\default\\labels\\CustomLabels.labels-meta.xml"
     }
