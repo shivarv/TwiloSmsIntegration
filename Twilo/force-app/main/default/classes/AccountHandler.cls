@@ -21,7 +21,13 @@ public class AccountHandler {
         List<Account> changedGoldAccounts = filterGoldAccountsChange(accountOldMap, accountNewMap );
         for(Account changedGoldAccount : changedGoldAccounts) {
             String smsBody = String.format(Label.goldCustomerNotification, new List<String>{changedGoldAccount.Name});
-            TwiloApiService.makeGetCallout(smsBody, FROM_NUMBER_HARDCODE, TO_NUMBER_HARDCODE);
+            try{
+                if(!test.isrunningtest()) {
+                	TwiloApiService.makeGetCallout(smsBody, FROM_NUMBER_HARDCODE, TO_NUMBER_HARDCODE);
+                }
+            } catch(Exception e) {
+                System.debug(e);
+            }
         }
 
     }

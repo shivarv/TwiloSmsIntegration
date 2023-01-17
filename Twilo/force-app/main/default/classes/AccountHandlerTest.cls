@@ -39,9 +39,39 @@ private class AccountHandlerTest {
         insert bronzeOpportunity;
         testAccount = [select id, name, customer_Classification__c, customerSpendSummary__c FROM Account LIMIT 1 ];
         System.assertEquals(System.Label.bronzeCustomerLabel, testAccount.customer_Classification__c,  'customer classification has to be Bronze');
-  		
 	}
 
+    @isTest
+    static void testAccountGoldTierEvent() {
+        enableAccountTrigger();
+        Account testAccount = [select id, name, customer_Classification__c, customerSpendSummary__c FROM Account LIMIT 1 ];
+        Opportunity bronzeOpportunity = createOpportunity(System.Label.bronzeCustomerLabel, testAccount.Id);
+        insert bronzeOpportunity;
+        Opportunity goldOpportunity = createOpportunity(System.Label.goldCustomerLabel, testAccount.Id);
+        insert goldOpportunity;
+        //email is sent mock service
+    }
+
+    @isTest
+    static void filterGoldAccountsChange() {
+        List<Account> changedGoldAccounts;
+        Account testAccount = [select id, name, customer_Classification__c, customerSpendSummary__c FROM Account LIMIT 1 ];
+        Opportunity bronzeOpportunity = createOpportunity(System.Label.bronzeCustomerLabel, testAccount.Id);
+        insert bronzeOpportunity;
+        testAccount = [select id, name, customer_Classification__c, customerSpendSummary__c FROM Account LIMIT 1 ];
+        Map<Id, Account>  oldAccountMap = new Map<Id, Account>();
+        oldAccountMap.put(testAccount.Id, testAccount);
+
+        Opportunity goldOpportunity = createOpportunity(System.Label.goldCustomerLabel, testAccount.Id);
+        insert goldOpportunity;
+        testAccount = [select id, name, customer_Classification__c, customerSpendSummary__c FROM Account LIMIT 1 ];
+        Map<Id, Account>  newAccountMap = new Map<Id, Account>();
+        newAccountMap.put(testAccount.Id, testAccount);
+
+        changedGoldAccounts = AccountHandler.filterGoldAccountsChange(oldAccountMap, newAccountMap);
+        System.assertEquals(changedGoldAccounts.size(), 1, 'One of the account has been converted to gold');
+
+    }
     private static void emptyOpportunity(Id accountId) {
         List<Opportunity> opportunities = [select id from Opportunity where AccountId = :accountId];
         if(!opportunities.isEmpty()) {
@@ -79,6 +109,12 @@ private class AccountHandlerTest {
     private static void disableAccountTrigger() {
         TriggerConfig__c setting = new TriggerConfig__c(SetupOwnerId=UserInfo.getOrganizationId());
         setting.isAccountTriggerEnabled__c = false;
+        upsert setting;
+    }
+
+    private static void enableAccountTrigger() {
+        TriggerConfig__c setting = TriggerConfig__c.getOrgDefaults();
+        setting.isAccountTriggerEnabled__c = true;
         upsert setting;
     }
 }
