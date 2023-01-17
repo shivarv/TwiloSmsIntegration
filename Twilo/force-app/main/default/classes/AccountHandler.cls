@@ -8,13 +8,19 @@
 public class AccountHandler {
 
     private static CustomClassification__c customerclassification = CustomClassification__c.getOrgDefaults();
-
+    private static String FROM_NUMBER_HARDCODE = '+17724480512';
+    private static String TO_NUMBER_HARDCODE = '+447415423477';
 
 
     public static void processAccountsUpdate(List<Account> accountsList, 
                                     Map<Id, Account> accountOldMap, Map<Id, Account> accountNewMap) 
     {
         List<Account> changedGoldAccounts = filterGoldAccountsChange(accountOldMap, accountNewMap );
+        for(Account changedGoldAccount : changedGoldAccounts) {
+            String smsBody = String.format(Label.goldCustomerNotification, new List<String>{changedGoldAccount.Name});
+            TwiloApiService.makeGetCallout(smsBody, FROM_NUMBER_HARDCODE, TO_NUMBER_HARDCODE);
+        }
+
     }
 
     public static List<Account> filterGoldAccountsChange( Map<Id, Account> accountOldMap, Map<Id, Account> accountNewMap)
@@ -22,7 +28,7 @@ public class AccountHandler {
         List<Account> changedGoldAccounts = new List<Account>();
         for (Id accountId : accountOldMap.keySet()) {
             if(isAccountSpendSummaryGotGold(accountOldMap.get(accountId), accountNewMap.get(accountId))) {
-                changedGoldAccounts.add(new Account(Id = accountId));
+                changedGoldAccounts.add(new Account(Id = accountId, Name = accountNewMap.get(accountId).Name));
             }
         }
         return changedGoldAccounts;
