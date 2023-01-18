@@ -2,13 +2,15 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 01-17-2023
+ * @last modified on  : 01-18-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public class AccountHandler {
 
     private static CustomClassification__c customerclassification = CustomClassification__c.getOrgDefaults();
-    private static String FROM_NUMBER_HARDCODE = '+17724480512';
+    private static TwilloConfig__c twilloConfiguration = TwilloConfig__c.getOrgDefaults();
+
+    private static String FROM_NUMBER_HARDCODE = twilloConfiguration?.ceoNumber__c;
     private static String TO_NUMBER_HARDCODE = '+447415423477';
 
     public static boolean isTriggerEnabled() {

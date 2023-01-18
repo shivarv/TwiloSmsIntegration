@@ -1,5 +1,5 @@
 {
-    "serverMaxRevisionCounter": 388,
+    "serverMaxRevisionCounter": 407,
     "sourceMembers": {
         "LightningComponentBundle__twiloHomePage": {
             "serverRevisionCounter": 31,
@@ -44,8 +44,8 @@
             "isNameObsolete": false
         },
         "Profile__Admin": {
-            "serverRevisionCounter": 384,
-            "lastRetrievedFromServer": 384,
+            "serverRevisionCounter": 395,
+            "lastRetrievedFromServer": 395,
             "memberType": "Profile",
             "isNameObsolete": false
         },
@@ -92,14 +92,14 @@
             "isNameObsolete": false
         },
         "ApexTrigger__AccountTrigger": {
-            "serverRevisionCounter": 358,
+            "serverRevisionCounter": 403,
             "lastRetrievedFromServer": 358,
             "memberType": "ApexTrigger",
             "isNameObsolete": false
         },
         "ApexClass__AccountHandler": {
-            "serverRevisionCounter": 388,
-            "lastRetrievedFromServer": 388,
+            "serverRevisionCounter": 402,
+            "lastRetrievedFromServer": 396,
             "memberType": "ApexClass",
             "isNameObsolete": false
         },
@@ -110,8 +110,8 @@
             "isNameObsolete": true
         },
         "ApexClass__TwiloApiService": {
-            "serverRevisionCounter": 48,
-            "lastRetrievedFromServer": 48,
+            "serverRevisionCounter": 407,
+            "lastRetrievedFromServer": 397,
             "memberType": "ApexClass",
             "isNameObsolete": false
         },
@@ -208,6 +208,30 @@
         "CustomObject__TriggerConfig__c": {
             "serverRevisionCounter": 353,
             "lastRetrievedFromServer": 353,
+            "memberType": "CustomObject",
+            "isNameObsolete": false
+        },
+        "CustomField__TwilloConfig__c.accountSid__c": {
+            "serverRevisionCounter": 391,
+            "lastRetrievedFromServer": 391,
+            "memberType": "CustomField",
+            "isNameObsolete": false
+        },
+        "CustomField__TwilloConfig__c.token__c": {
+            "serverRevisionCounter": 392,
+            "lastRetrievedFromServer": 392,
+            "memberType": "CustomField",
+            "isNameObsolete": false
+        },
+        "CustomField__TwilloConfig__c.ceoNumber__c": {
+            "serverRevisionCounter": 393,
+            "lastRetrievedFromServer": 393,
+            "memberType": "CustomField",
+            "isNameObsolete": false
+        },
+        "CustomObject__TwilloConfig__c": {
+            "serverRevisionCounter": 390,
+            "lastRetrievedFromServer": 390,
             "memberType": "CustomObject",
             "isNameObsolete": false
         }

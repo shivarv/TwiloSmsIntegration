@@ -2,14 +2,17 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 01-17-2023
+ * @last modified on  : 01-18-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public with sharing class TwiloApiService {
+    private static TwilloConfig__c twilloConfiguration = TwilloConfig__c.getOrgDefaults();
+
     @future(callout=true)
     public static void makeGetCallout(String smsBody, String fromPhNumber, String toPhoneNo) {
-        String accountSid = 'ACd3b43ae5cf7fa7d058625026ea4c8df5'; // you can put ACCOUNT SID from twilio account
-        String token = '791d30ba118ae20380f780a578aea23e'; // you can put AUTH TOKEN from twilio account
+
+        String accountSid = twilloConfiguration?.accountSid__c; // you can put ACCOUNT SID from twilio account
+        String token = twilloConfiguration?.token__c; // you can put AUTH TOKEN from twilio account
         String endPoint = 'https://api.twilio.com/2010-04-01/Accounts/'+accountSid+'/SMS/Messages.json';
         Blob creds = Blob.valueOf(accountSid+':' +token);
         HttpRequest req = new HttpRequest();
