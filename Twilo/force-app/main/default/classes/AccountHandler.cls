@@ -24,7 +24,7 @@ public class AccountHandler {
         for(Account changedGoldAccount : changedGoldAccounts) {
             String smsBody = String.format(Label.goldCustomerNotification, new List<String>{changedGoldAccount.Name});
             try{
-                if(!test.isrunningtest()) {
+                if(Constants.webCalloutAllowedCodeSwitch) {
                 	TwiloApiService.makeGetCallout(smsBody, FROM_NUMBER_HARDCODE, TO_NUMBER_HARDCODE);
                 }
             } catch(Exception e) {

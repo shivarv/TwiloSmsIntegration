@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 01-17-2023
+ * @last modified on  : 01-18-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 
@@ -12,8 +12,8 @@ private class AccountHandlerTest {
     @TestSetup
     static void makeData()
     {
-        configureClassificationSetting();
-        disableAccountTrigger();
+        TestDataUtilities.configureClassificationSetting();
+        TestDataUtilities.disableAccountTrigger();
         Account testAccount = new Account(name ='testAccount');
         insert testAccount;
     }
@@ -43,7 +43,8 @@ private class AccountHandlerTest {
 
     @isTest
     static void testAccountGoldTierEvent() {
-        enableAccountTrigger();
+        TestDataUtilities.enableAccountTrigger();
+        Constants.webCalloutAllowedCodeSwitch = false; // no callout is executed
         Account testAccount = [select id, name, customer_Classification__c, customerSpendSummary__c FROM Account LIMIT 1 ];
         Opportunity bronzeOpportunity = createOpportunity(System.Label.bronzeCustomerLabel, testAccount.Id);
         insert bronzeOpportunity;
@@ -98,23 +99,4 @@ private class AccountHandlerTest {
         return newOpportunity;
     }
  
-    private static void configureClassificationSetting() {
-        CustomClassification__c setting = new CustomClassification__c(SetupOwnerId=UserInfo.getOrganizationId());
-        setting.bronzeCustomerValue__c = 10000;
-        setting.silverCustomerValue__c = 25000;
-        setting.goldCustomerValue__c = 50000;
-        upsert setting;
-    }
-
-    private static void disableAccountTrigger() {
-        TriggerConfig__c setting = new TriggerConfig__c(SetupOwnerId=UserInfo.getOrganizationId());
-        setting.isAccountTriggerEnabled__c = false;
-        upsert setting;
-    }
-
-    private static void enableAccountTrigger() {
-        TriggerConfig__c setting = TriggerConfig__c.getOrgDefaults();
-        setting.isAccountTriggerEnabled__c = true;
-        upsert setting;
-    }
 }
