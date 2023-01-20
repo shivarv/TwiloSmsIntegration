@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 01-18-2023
+ * @last modified on  : 01-20-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 @isTest
@@ -25,6 +25,14 @@ public class TestDataUtilities {
     public static void enableAccountTrigger() {
         TriggerConfig__c setting = TriggerConfig__c.getOrgDefaults();
         setting.isAccountTriggerEnabled__c = true;
+        upsert setting;
+    }
+
+    public static void enableTwiloConfigSetting() {
+        TwilloConfig__c setting = new TwilloConfig__c(SetupOwnerId=UserInfo.getOrganizationId());
+        setting.accountSid__c = 'ACd3b43ae5cf7fa7d058625026ea4c8df5';
+        setting.token__c = 'ACd3b43ae5cf7fa7d058625026ea4';
+
         upsert setting;
     }
 

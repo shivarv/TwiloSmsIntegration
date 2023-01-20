@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 01-18-2023
+ * @last modified on  : 01-20-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public with sharing class TwiloApiService {
@@ -29,7 +29,8 @@ public with sharing class TwiloApiService {
         if(res.getStatusCode() == 201){
            System.debug('SMS Sent Successfully');
         } else{
-            System.debug('error' + res.getStatus() + ' '+res.getStatusCode());
+            insert new Error_Log__c(Error_Log_Type__c='Api Error', 
+                                    error_Details__c= 'SMS Failed to deliver'+ res.getStatus()+ ' '+res.getStatusCode());
         }
      } 
 }

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Error_Log_Type__c</fullName>
+    <defaultValue>&apos;Unknown Error&apos;</defaultValue>
+    <externalId>false</externalId>
+    <label>Error Log Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Api Error</fullName>
+                <default>false</default>
+                <label>Api Error</label>
+            </value>
+            <value>
+                <fullName>Apex Error</fullName>
+                <default>false</default>
+                <label>Apex Error</label>
+            </value>
+            <value>
+                <fullName>Trigger Error</fullName>
+                <default>false</default>
+                <label>Trigger Error</label>
+            </value>
+            <value>
+                <fullName>Unknown Error</fullName>
+                <default>false</default>
+                <label>Unknown Error</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
