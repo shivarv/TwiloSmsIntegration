@@ -6,7 +6,15 @@
   @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 -->
 <template>
-    <lightning-input type="text" label="sms Text" value=""></lightning-input>
-
-    <lightning-button label="Neutral" title="Non-primary action" onclick={sentTwiloSms} class="slds-m-left_x-small"></lightning-button>
+    <div class="div-layout">
+        <div class="div-layout-item">
+            <lightning-textarea
+                    value="Sms Text"
+                    max-length="300"
+                > </lightning-textarea>
+        </div>
+        <div class="div-layout-item">
+            <lightning-button label="Sent Sms" title="Non-primary action" onclick={sentTwiloSms}></lightning-button>
+        </div>
+    </div>
 </template>

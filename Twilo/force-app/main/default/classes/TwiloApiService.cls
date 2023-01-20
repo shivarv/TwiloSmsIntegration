@@ -10,26 +10,31 @@ public with sharing class TwiloApiService {
 
     @future(callout=true)
     public static void makeGetCallout(String smsBody, String fromPhNumber, String toPhoneNo) {
-
-        String accountSid = twilloConfiguration?.accountSid__c; // you can put ACCOUNT SID from twilio account
-        String token = twilloConfiguration?.token__c; // you can put AUTH TOKEN from twilio account
-        String endPoint = 'https://api.twilio.com/2010-04-01/Accounts/'+accountSid+'/SMS/Messages.json';
-        Blob creds = Blob.valueOf(accountSid+':' +token);
-        HttpRequest req = new HttpRequest();
-        Http http = new Http();
-        HTTPResponse res = new HTTPResponse();
-        req.setEndpoint(endPoint);
-        req.setMethod('POST');
-        String VERSION  = '3.2.0';
-        req.setHeader('Authorization', 'Basic '+EncodingUtil.base64Encode(creds));
-        req.setBody('To=' + EncodingUtil.urlEncode(toPhoneNo, 'UTF-8') + '&From=' + EncodingUtil.urlEncode(fromPhNumber,'UTF-8') + '&Body=' + smsBody);
-        res = http.send(req);
-        System.debug(res.getBody());
-  
-        if(res.getStatusCode() == 201){
-           System.debug('SMS Sent Successfully');
-        } else{
-            insert new Error_Log__c(Error_Log_Type__c='Api Error', 
+       HTTPResponse res = new HTTPResponse();
+        try {
+            String accountSid = twilloConfiguration?.accountSid__c; // you can put ACCOUNT SID from twilio account
+            String token = twilloConfiguration?.token__c; // you can put AUTH TOKEN from twilio account
+            String endPoint = 'https://api.twilio.com/2010-04-01/Accounts/'+accountSid+'/SMS/Messages.json';
+            Blob creds = Blob.valueOf(accountSid+':' +token);
+            HttpRequest req = new HttpRequest();
+            Http http = new Http();
+            
+            req.setEndpoint(endPoint);
+            req.setMethod('POST');
+            String VERSION  = '3.2.0';
+            req.setHeader('Authorization', 'Basic '+EncodingUtil.base64Encode(creds));
+            req.setBody('To=' + EncodingUtil.urlEncode(toPhoneNo, 'UTF-8') + '&From=' + EncodingUtil.urlEncode(fromPhNumber,'UTF-8') + '&Body=' + smsBody);
+            res = http.send(req);
+            System.debug(res.getBody());
+      
+            if(res.getStatusCode() == 201){
+               System.debug('SMS Sent Successfully');
+            } else{
+                insert new Error_Log__c(Error_Log_Type__c='Api Error', 
+                                        error_Details__c= 'SMS Failed to deliver'+ res.getStatus()+ ' '+res.getStatusCode());
+            }
+        } catch(Exception e) {
+             insert new Error_Log__c(Error_Log_Type__c='Api Error', 
                                     error_Details__c= 'SMS Failed to deliver'+ res.getStatus()+ ' '+res.getStatusCode());
         }
      } 

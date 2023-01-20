@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 01-18-2023
+ * @last modified on  : 01-20-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public with sharing class SentSmsController {
@@ -18,7 +18,7 @@ public with sharing class SentSmsController {
     
             fromNumber = userRecord.get(0).MobilePhone;
             toNumber = accountRecord.get(0).Phone;
-            if(!Constants.webCalloutAllowedCodeSwitch) {
+            if(Constants.webCalloutAllowedCodeSwitch) {
                 TwiloApiService.makeGetCallout(smsBody, fromNumber, toNumber);
             }
         }
