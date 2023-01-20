@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
  * @group             : 
- * @last modified on  : 01-18-2023
+ * @last modified on  : 01-20-2023
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
 public class AccountHandler {
@@ -28,7 +28,9 @@ public class AccountHandler {
                 	TwiloApiService.makeGetCallout(smsBody, FROM_NUMBER_HARDCODE, TO_NUMBER_HARDCODE);
                 }
             } catch(Exception e) {
-                System.debug(e);
+                insert new Error_Log__c(Error_Log_Type__c='Apex Error', 
+                                        error_Details__c= e.getMessage() + ' '+e.getStackTraceString()
+                                    );
             }
         }
 

@@ -25,16 +25,13 @@ public with sharing class TwiloApiService {
             req.setHeader('Authorization', 'Basic '+EncodingUtil.base64Encode(creds));
             req.setBody('To=' + EncodingUtil.urlEncode(toPhoneNo, 'UTF-8') + '&From=' + EncodingUtil.urlEncode(fromPhNumber,'UTF-8') + '&Body=' + smsBody);
             res = http.send(req);
-            System.debug(res.getBody());
       
-            if(res.getStatusCode() == 201){
-               System.debug('SMS Sent Successfully');
-            } else{
+            if(res.getStatusCode() != 201) {
                 insert new Error_Log__c(Error_Log_Type__c='Api Error', 
                                         error_Details__c= 'SMS Failed to deliver'+ res.getStatus()+ ' '+res.getStatusCode());
             }
         } catch(Exception e) {
-             insert new Error_Log__c(Error_Log_Type__c='Api Error', 
+            insert new Error_Log__c(Error_Log_Type__c='Api Error', 
                                     error_Details__c= 'SMS Failed to deliver'+ res.getStatus()+ ' '+res.getStatusCode());
         }
      } 

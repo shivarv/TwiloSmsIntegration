@@ -10,7 +10,6 @@ export default class SentSms extends LightningElement {
 
     @api recordId;
     sentTwiloSms(event) {
-        console.log('in sentTwiloSms');
         var inp = this.template.querySelector("lightning-textarea");
 //tteest
         
@@ -25,7 +24,6 @@ export default class SentSms extends LightningElement {
 
         })
         .catch(error => {
-            console.log('in error twillo' +error);
             this.showNotification();
             this.dispatchEvent(new CloseActionScreenEvent());
 
@@ -33,7 +31,6 @@ export default class SentSms extends LightningElement {
     }
 
     showNotification() {
-        console.log('in showNotification');
 
         const evt = new ShowToastEvent({
             title: 'SMS Sent!',
